@@ -48,13 +48,14 @@ normalHigh = getNormalHigh(todaysDate)
 normalLow = getNormalLow(todaysDate)
 todaysHigh = getTodaysHigh()
 todaysLow = getTodaysLow()
-highDiff = todaysHigh - normalHigh
-lowDiff = todaysLow - normalLow
+highDiff = getPositiveNegative(todaysHigh - normalHigh)
+lowDiff = getPositiveNegative(todaysLow - normalLow)
 
 df = pd.DataFrame()
 df[''] = ['High', 'Low']
 df['Today'] = [f'{todaysHigh}ºF', f'{todaysLow}ºF']
 df['Normal'] = [f'{normalHigh}ºF', f'{normalLow}ºF']
+df['Difference'] = [highDiff, lowDiff]
 
 # print(df)
 
