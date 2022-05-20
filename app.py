@@ -55,7 +55,7 @@ df = pd.DataFrame()
 df[''] = ['High', 'Low']
 df['Today'] = [f'{todaysHigh}ºF', f'{todaysLow}ºF']
 df['Normal'] = [f'{normalHigh}ºF', f'{normalLow}ºF']
-df['Difference'] = [highDiff, lowDiff]
+df['Gap'] = [highDiff, lowDiff]
 
 # print(df)
 
