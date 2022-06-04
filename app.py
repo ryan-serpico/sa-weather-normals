@@ -33,7 +33,7 @@ def getNormalLow(today):
 # Get today's date in this format 1/1/2022
 def getToday():
     today = dt.datetime.today()
-    return today.strftime('%-m/%d/%y')
+    return today.strftime('%-m/%-d/%y')
 
 def getPositiveNegative(diff):
     if diff > 0:
