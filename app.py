@@ -38,10 +38,8 @@ def getToday():
 def getPositiveNegative(diff):
     if diff > 0:
         return '+' + str(diff) + '°'
-    elif diff == 0:
-        return str(diff) + '°'
     else:
-        return '-' + str(diff) + '°'
+        return str(diff) + '°'
 
 todaysDate = getToday()
 normalHigh = getNormalHigh(todaysDate)

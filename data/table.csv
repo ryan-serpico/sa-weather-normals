@@ -1,3 +1,8 @@
 ,Today,Normal,Gap
+<<<<<<< HEAD
 High,88ºF,93ºF,--5°
 Low,73ºF,74ºF,--1°
+=======
+High,96ºF,93ºF,+3°
+Low,73ºF,74ºF,-1°
+>>>>>>> 51b93ac (Resolved double negative issue)
